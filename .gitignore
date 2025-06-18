@@ -1,0 +1,127 @@
+# --- Visual Studio 2022 生成文件 ---
+## 忽略VS用户特定文件
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.vs/
+.vs/
+x64/
+x86/
+Win32/
+Debug/
+Release/
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebugPublic/
+[Rr]eleases/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]emp/
+
+## VS缓存和临时文件
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+*.vcxproj.*.user
+*.vcxproj.filters
+ipch/
+*.ipch
+*.tlog/
+*.lastbuildstate
+*.pdb
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.exp
+*.lib
+*.res
+*.manifest
+*.idb
+*.pgd
+*.pgc
+
+# --- Qt 相关 ---
+## Qt构建目录
+build-*/
+*.pro.user
+*.qmake.stash
+Makefile*
+*.qm
+moc_*
+qrc_*
+ui_*
+*.moc
+*.o
+*.a
+*.dll
+*.so
+*.so.*
+*.dylib
+
+## Qt Creator
+CMakeLists.txt.user
+.cache/
+.config/
+
+# --- CMake 生成文件 ---
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+*.cmake
+*.ninja
+.ninja_deps
+.ninja_log
+
+# --- 其他开发环境 ---
+## VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## CLion
+.idea/
+*.iml
+
+# --- 系统/IDE通用 ---
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- 项目特定忽略 ---
+## 二进制和可执行文件
+*.exe
+*.dll
+*.bin
+*.app
+
+## 文档/日志
+*.log
+*.tmp
+*.bak
+*.backup
+
+# --- 第三方库/依赖 ---
+## 通常忽略第三方库（使用包管理器管理）
+3rdParty/
+extern/
+libs/
+deps/
