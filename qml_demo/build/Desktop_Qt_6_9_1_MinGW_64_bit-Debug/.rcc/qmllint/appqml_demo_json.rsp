@@ -1,0 +1,12 @@
+--bare
+-I
+D:/DemoWorkSpace/qml_demo/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug
+-I
+D:/Qt/6.9.1/mingw_64/qml
+--resource
+D:/DemoWorkSpace/qml_demo/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/.qt/rcc/qmake_qml_demo.qrc
+--resource
+D:/DemoWorkSpace/qml_demo/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/.qt/rcc/appqml_demo_raw_qml_0.qrc
+D:/DemoWorkSpace/qml_demo/Main.qml
+--json
+D:/DemoWorkSpace/qml_demo/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/appqml_demo_qmllint.json

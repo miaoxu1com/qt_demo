@@ -4,7 +4,7 @@
 #define DEMO1_H
 
 #include <QtWidgets/QWidget>
-#include "ui_demo1.h"
+#include <ui_demo1.h>
 
 class demo1 : public QWidget
 {
