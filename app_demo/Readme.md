@@ -12,6 +12,8 @@
 
 ##### 增加新增的模块
 
+Qt VS Tools的配置改变的是pro文件的配置，不改变CMakeList配置
+
 ![image-20250621190344443](assets/image-20250621190344443.png)
 
 ##### 配置qml调试
@@ -116,5 +118,40 @@ cmake .. -G "Ninja" -DCMAKE_C_COMPILER="gcc" -DCMAKE_CXX_COMPILER="g++"
 
 ![image-20250622014020585](assets/image-20250622014020585.png)
 
-##### 要使用CMakeList启动程序就不要sln文件了，否则出现问题
+##### VS .Net项目sln解决方案工程属性中设置项目属性
 
+![image-20250622132344305](assets/image-20250622132344305.png)
+
+##### 要使用CMakeList启动程序就不要sln文件了，否则出现问题，VS C++解决方案中的工程属性中设置库路径和包含路径
+
+包含目录都是include目录
+
+![image-20250622133352243](assets/image-20250622133352243.png)
+
+库目录是lib目录
+
+![image-20250622133417686](assets/image-20250622133417686.png)
+
+window运行库和库目录设置用来区分系统运行库和第三方运行库
+
+![image-20250622133641344](assets/image-20250622133641344.png)
+
+##### 创建项目时使用了预编译头文件，每个头文件都要包含stdafx.h头文件，否则报错
+
+
+
+##### CMakeList项目，加载不到项目工程文件demo.vcxproj，编译配置就看不到启动项配置，启动配置定义在demo.vcxproj，会显示CMakeList![](assets/image-20250622134118291.png)
+
+
+
+![image-20250622134118291](assets/image-20250622134118291.png)
+
+##### CMakeList中配置项说明
+
+find_package属性相当于sln项目中工程属性的库目录设置，是查到dll或lib文件的目录（选择文件窗口图片名字没有明确命名按照时间顺序排列插入）
+
+![image-20250622134713806](assets/image-20250622134713806.png)
+
+add_subdirectory相当于sln中的子工程demo.vcxproj文件，每个子项目都有自己的CMakeList，每个子项目有自己的ReadMe和assets资源，且会编译解决方案时，会编译子项目的代码
+
+![image-20250622135452814](assets/image-20250622135452814.png)
